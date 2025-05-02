@@ -1,0 +1,1003 @@
+/* 
+ * ----------------------------
+ * Common CSS (Modernized)
+ * ----------------------------
+ */
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f1f3f6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+ul {
+    margin: 0;
+}
+
+button, input[type=button] {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:focus, input:focus {
+    outline: none;
+}
+
+input {
+    border: none;
+}
+
+button {
+    border: none;
+    background: transparent;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+p {
+    margin: 0;
+    color: #555;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #212121;
+    font-weight: 700;
+    margin: 0;
+    line-height: 1.2;
+}
+
+h1 { font-size: 36px; }
+h2 { font-size: 30px; }
+h3 { font-size: 24px; }
+h4 { font-size: 18px; }
+h5 { font-size: 15px; }
+h6 { font-size: 13px; }
+
+a {
+    display: inline-block;
+    color: #2874f0;
+    transition: all 0.3s ease;
+}
+
+a:active, a:focus, a:hover {
+    text-decoration: none;
+    color: #1259c3;
+}
+
+a:hover {
+    opacity: 0.8;
+}
+/* Layout CSS */
+.section-content-p35 {
+    padding: 0 35px;
+}
+
+.page-wrapper {
+    overflow: hidden;
+    background: #f1f3f6; /* Modern light grey (Flipkart-like) */
+    padding-bottom: 10vh; /* More space for better layout */
+}
+
+.page-container {
+    background: #f1f3f6;
+    padding-left: 200px;
+}
+
+.main-content {
+    padding-top: 116px;
+    min-height: 100vh;
+}
+
+/* Sidebar Modernization */
+aside.menu-sidebar.d-none.d-lg-block.clr {
+    background: white; /* Ensures contrast */
+    z-index: 99999999;
+    height: 75px;
+    box-shadow: -2px 0 4px rgba(0, 0, 0, 0.15); /* Softer shadow */
+}
+/* 
+ * ----------------------------
+ * Header Desktop Section (Modernized)
+ * ----------------------------
+ */
+
+ .header-desktop {
+    background: #2874f0; /* Flipkart Blue */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 200px;
+    height: 75px;
+    z-index: 3;
+}
+
+.header-desktop .section-content {
+    overflow: visible;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.header-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-button {
+    display: flex;
+    align-items: center;
+}
+.cart-area {
+    display: flex !important;
+    align-items: center;
+    position: absolute;
+    right: 135px; /* Adjust spacing from the right */
+    top: 40%;
+    transform: translateY(-50%);
+    z-index: 9999;
+}
+
+.number {
+    padding: 6px 0;
+}
+
+.arrows i {
+    font-size: 30px;
+    padding: 4px;
+}
+
+section {
+    position: relative;
+}
+
+.section-content {
+    position: relative;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+.section-content-p30 {
+    padding: 0 30px;
+}
+
+.au-input-xl {
+    min-width: 935px;
+}
+
+input.au-input.au-input-xl {
+    border-radius: 40px !important;
+    margin-right: 15px;
+}
+
+.au-input {
+    line-height: 43px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    color: #333;
+    padding: 0 17px;
+    border-radius: 3px;
+    transition: all 0.5s ease;
+}
+
+/* Login Button */
+.login-header-btn {
+    background-color: #ff9800;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.login-header-btn:hover {
+    background-color: #e68900;
+}
+
+
+.cart-area.d-n {
+    display: block;
+}
+
+.cart-area i {
+    font-size: 22px;
+    float: left;
+    margin-top: 16px;
+    color: #fff;
+    margin-left: 15px;
+}
+
+.total {
+    background: #ff9f00; /* Flipkart Orange */
+    line-height: 43px;
+    color: #fff;
+    border-radius: 30px;
+    border: 1px solid #fb641b;
+    float: left;
+    margin-top: 7px;
+    padding-left: 17px;
+}
+
+.total span {
+    display: inline-block;
+    background: #fff;
+    padding: 0 13px;
+    color: #000;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-left: 11px;
+}
+
+/* Form & Buttons */
+.form-header {
+    display: flex;
+}
+
+.au-btn-submit {
+    position: relative;
+    right: 0;
+    min-width: 95px;
+    color: #fff;
+    border: 1px solid #ff9f00;
+    border-radius: 43px;
+    background: #ff9f00;
+    transition: background 0.3s ease;
+}
+
+.au-btn-submit:hover {
+    background: #fb641b;
+}
+
+.au-btn-submit > i {
+    font-size: 20px;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/* 
+ * ----------------------------
+ * Left Menu Bar (Modernized)
+ * ----------------------------
+ */
+
+ .menu-sidebar {
+    width: 200px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background: #f8f9fa; /* Light grey for modern contrast */
+    border-right: 1px solid #d1d1d1;
+    overflow-y: auto;
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.menu-sidebar .logo {
+    background: white;
+    height: 75px;
+    padding: 0 35px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+    border-right: 1px solid #d1d1d1;
+    position: relative;
+    z-index: 3;
+}
+
+/* Sub-menu items */
+.menu-sidebar .navbar-list .navbar-sub-list {
+    display: none;
+    padding-left: 34px;
+}
+
+.menu-sidebar .navbar-list .navbar-sub-list li a {
+    padding: 11.5px 0;
+}
+
+/* Sidebar Content */
+.menu-sidebar-content {
+    position: relative;
+    height: calc(100vh - 75px);
+}
+
+/* Sidebar Links */
+.navbar-sidebar {
+    padding: 35px;
+    padding-bottom: 0;
+}
+
+.navbar-sidebar .navbar-list li a {
+    display: block;
+    color: #333;
+    font-size: 16px;
+    padding: 8px 10px;
+    text-decoration: none; /* Removes underline */
+    transition: font-weight 0.3s ease, font-size 0.3s ease, color 0.3s ease;
+}
+
+.navbar-sidebar .navbar-list li a i {
+    margin-right: 15px;
+}
+
+/* Sidebar Link Hover - Faster & Smoother */
+.navbar-sidebar .navbar-list li a:hover {
+    font-weight: bold;
+    transform: scale(1.05); /* Subtle zoom instead of font-size change */
+    color: #2874f0; /* Flipkart Blue */
+    transition: transform 0.1s ease-in, color 0.1s ease-in;
+}
+
+
+/* 
+ * ----------------------------
+ * Header Mobile Section (Modernized)
+ * ----------------------------
+ */
+
+ .header-mobile {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #2874f0; /* Flipkart Blue */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header-mobile .header-mobile-bar {
+    padding: 15px 0;
+    background: #2874f0;
+}
+
+.header-mobile .header-mobile-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Hamburger Menu */
+.header-mobile .hamburger {
+    width: 36px;
+    height: 36px;
+    padding: 0;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.header-mobile .hamburger:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.header-mobile .hamburger .hamburger-box {
+    width: 20px;
+    height: 15px;
+}
+
+.header-mobile .hamburger .hamburger-box .hamburger-inner {
+    width: 20px;
+    height: 2px;
+    background: white;
+    border-radius: 2px;
+}
+
+.header-mobile .hamburger .hamburger-box .hamburger-inner:before,
+.header-mobile .hamburger .hamburger-box .hamburger-inner:after {
+    background: white;
+    width: 20px;
+    height: 2px;
+    position: absolute;
+    content: "";
+}
+
+.header-mobile .hamburger .hamburger-box .hamburger-inner:before {
+    top: -6px;
+}
+
+.header-mobile .hamburger .hamburger-box .hamburger-inner:after {
+    top: 6px;
+}
+
+/* Mobile Navigation */
+.header-mobile .navbar-mobile {
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: 88px;
+    z-index: 20;
+    background: #f1f3f6; /* Flipkart Light Grey */
+}
+
+.header-mobile .navbar-mobile .navbar-mobile-list {
+    background: #f1f3f6;
+}
+
+.header-mobile .navbar-mobile .navbar-mobile-list > li > a {
+    padding-left: 15px !important;
+}
+
+.header-mobile .navbar-mobile .navbar-mobile-list li a {
+    color: #333;
+    display: block;
+    padding: 12px 20px;
+    border-bottom: 1px solid #e0e0e0;
+    text-transform: capitalize;
+    transition: all 0.3s ease;
+}
+
+.header-mobile .navbar-mobile .navbar-mobile-list li a:hover {
+    color: #2874f0; /* Flipkart Blue */
+}
+
+/* Mobile Submenu */
+.navbar-mobile-sub-list {
+    display: none;
+    padding-left: 30px;
+    background: #fff;
+}
+
+.header-mobile .navbar-mobile .navbar-mobile-sub-list li a {
+    padding-left: 15px;
+}
+
+/* Dark Mode Header Variant */
+.header-mobile-2 {
+    background: #393939;
+    position: static;
+}
+
+.header-mobile-2 .navbar-mobile {
+    top: 82px;
+}
+
+.header-mobile-2 .hamburger .hamburger-box .hamburger-inner,
+.header-mobile-2 .hamburger .hamburger-box .hamburger-inner::before,
+.header-mobile-2 .hamburger .hamburger-box .hamburger-inner::after {
+    background: white;
+}
+
+/* Page Content Adjustments */
+.main-content.page-m {
+    padding: 10% 30% 10% 5%;
+}
+/* 
+ * ----------------------------
+ * Products List (Modernized)
+ * ----------------------------
+ */
+
+/* Product Box */
+.product-box {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    margin-bottom: 60px;
+}
+
+.product-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Product Image */
+.product-box img {
+    width: 150px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Product Title */
+.product-box h1 {
+    font-size: 18px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+    font-weight: 600;
+    padding-top: 12px;
+    margin-bottom: 7px;
+    color: #212121;
+}
+
+/* Product Subtitle */
+.product-box h2 {
+    font-size: 15px;
+    font-weight: 500;
+    color: #585858;
+}
+
+/* Price Styling */
+.price {
+    margin: 15px 0 0;
+    font-weight: 800;
+    color: #388e3c; /* Flipkart Green */
+}
+
+/* Dropdown Select */
+.items select {
+    width: 100px;
+    height: 40px;
+    border-radius: 40px;
+    padding-left: 15px;
+    margin-bottom: 10px;
+    outline: 0;
+    margin-left: 5px;
+    border: 1px solid #ccc;
+    background: white;
+    transition: border 0.3s ease;
+}
+
+.items select:focus {
+    border: 1px solid #2874f0; /* Flipkart Blue */
+}
+/* 
+ * ----------------------------
+ * Shopping Cart Checkout (Modernized)
+ * ----------------------------
+ */
+
+ .form-area {
+    background: #ffffff; /* White background for a clean checkout */
+    position: relative;
+    margin-bottom: 45px;
+    padding: 50px 20px;
+    border: 2px solid #d1d1d1;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Checkout Section Title */
+.form-area h3 {
+    position: absolute;
+    top: -26px;
+    left: 13px;
+    background: #ffffff;
+    padding: 10px 20px;
+    font-weight: 500;
+    z-index: 23;
+    display: inline-block;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Input Fields */
+.input-space {
+    margin-bottom: 20px;
+}
+
+.input-space label {
+    padding-left: 10px;
+    font-size: 14px;
+    margin-bottom: 5px;
+    display: block;
+    font-weight: 600;
+}
+
+/* Text Input */
+.input-space input[type="text"],
+.input-space select {
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    outline: 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background: #f8f9fa;
+    transition: border 0.3s ease, background 0.3s ease;
+}
+
+/* Hover & Focus Effects */
+.input-space input[type="text"]:focus,
+.input-space select:focus {
+    border: 1px solid #2874f0; /* Flipkart Blue */
+    background: #fff;
+}
+
+/* Checkbox Styling */
+.au-checkbox {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 16px;
+    user-select: none;
+    margin-bottom: 10px;
+}
+
+.au-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Custom Checkbox */
+.au-checkmark {
+    position: relative;
+    height: 22px;
+    width: 22px;
+    background-color: #fff !important;
+    border: 2px solid #d1d1d1;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+/* Hover Effect */
+.au-checkbox:hover .au-checkmark {
+    background-color: #f1f1f1;
+}
+
+/* Checked Checkbox */
+.au-checkbox input:checked ~ .au-checkmark {
+    background-color: #fff;
+}
+
+/* Checkmark Tick */
+.au-checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.au-checkbox input:checked ~ .au-checkmark:after {
+    display: block;
+}
+
+/* Checkmark Icon */
+.au-checkbox .au-checkmark:after {
+    left: 5px;
+    top: 2px;
+    width: 9px;
+    height: 15px;
+    border: solid #388e3c; /* Flipkart Green */
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+
+/* Dropdown Styling */
+select {
+    color: #555;
+    padding: 8px;
+    border-radius: 6px;
+    background: #fff;
+}
+
+/* Placeholder Text */
+option:first {
+    color: #bbb;
+}
+/* 
+ * ----------------------------
+ * Shopping Cart Details (Modernized)
+ * ----------------------------
+ */
+
+ .table {
+    margin: 0;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Table Borders & Background */
+table.table.table-bordered {
+    border: 1px solid #d1d1d1;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Table Headers */
+table.table.table-bordered th {
+    background: #2874f0; /* Flipkart Blue */
+    color: #fff;
+    font-size: 14px;
+    padding: 10px;
+    text-align: left;
+    border-radius: 4px 4px 0 0;
+}
+
+/* Table Cells */
+.table-bordered td,
+.table-bordered th {
+    border: 1px solid #dee2e6;
+    padding: 10px;
+}
+
+/* Zebra Striping for Rows */
+.table-bordered tbody tr:nth-child(even) {
+    background: #f8f9fa;
+}
+
+/* Responsive Table */
+.table-responsive {
+    padding-right: 1px;
+    overflow-x: auto;
+    width: 100%;
+}
+
+/* Dropdown Styling */
+.items select {
+    width: 100px;
+    height: 40px;
+    border-radius: 40px;
+    padding-left: 15px;
+    margin-bottom: 10px;
+    outline: 0;
+    margin-left: 5px;
+    border: 1px solid #bbb;
+    background: white;
+    transition: border 0.3s ease;
+}
+
+.items select:focus {
+    border: 1px solid #2874f0; /* Flipkart Blue */
+}
+/* 
+ * ----------------------------
+ * Product Details (Modernized)
+ * ----------------------------
+ */
+
+ .price {
+    margin: 15px 0 0;
+    font-weight: 800;
+    color: #388e3c; /* Flipkart Green */
+    font-size: 18px;
+}
+
+.detail-section {
+    margin-top: 60px;
+}
+
+/* 
+ * ----------------------------
+ * Buttons (Modernized)
+ * ----------------------------
+ */
+
+.btn-info {
+    color: #fff;
+    background-color: #2874f0 !important; /* Flipkart Blue */
+    border-color: #2874f0 !important;
+    border-radius: 5px;
+    padding: 8px 15px;
+    transition: background 0.3s ease;
+}
+
+.btn-info:hover {
+    background-color: #1259c3 !important; /* Darker Blue */
+}
+
+/* Primary Button */
+a.primary-btn {
+    background: #2874f0;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 5px;
+    transition: background 0.3s ease;
+}
+
+a.primary-btn:hover {
+    background: #1259c3;
+    color: #fff;
+}
+
+.active-link {
+    font-weight: bold;
+}
+
+/* 
+ * ----------------------------
+ * Footer Section (Modernized)
+ * ----------------------------
+ */
+
+ footer {
+    background: #172337; /* Flipkart Dark Blue */
+    z-index: 1000; /* Ensure it stays above other elements */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+    color: white;
+}
+
+/* Footer Links */
+footer ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+footer ul li {
+    display: inline-block;
+    font-size: 14px;
+    padding: 10px 20px;
+}
+
+footer ul li a {
+    color: #ffffff;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    color: #ff9f00; /* Flipkart Orange */
+}
+
+/* Ensure content does not get hidden behind the fixed footer */
+body {
+    padding-bottom: 60px; /* Adjust this based on footer height */
+}
+/* 
+ * ----------------------------
+ * Media Queries (Modernized)
+ * ----------------------------
+ */
+
+ @media (max-width: 1600px) {
+    .au-input-xl {
+        min-width: 290px;
+    }
+}
+
+/* Tablet View */
+@media (max-width: 1315px) and (min-width: 992px) {
+    .header-desktop3 .section-content {
+        padding: 0 15px;
+    }
+    .header-navbar ul li a {
+        font-size: 13px;
+        padding: 27px 15px;
+    }
+    .header-navbar ul li a i {
+        margin-right: 5px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1320px;
+    }
+}
+
+/* Adjustments for Medium-Sized Screens */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .cart-area i {
+        font-size: 22px;
+        margin-top: 16px;
+        color: #2874f0; /* Flipkart Blue */
+        margin-left: 15px;
+    }
+    .header-mobile .header-mobile-bar {
+        padding: 10px 0;
+        background: #fff;
+    }
+    .header-wrap .account-item > .content {
+        display: none;
+    }
+}
+
+/* Mobile Adjustments */
+@media (max-width: 991px) {
+    .section-content-p30 {
+        padding: 0;
+    }
+    .page-container {
+        position: relative;
+        top: 88px;
+        padding-left: 0;
+    }
+    .page-wrapper {
+        background: #f1f3f6;
+        padding-bottom: 12vh;
+    }
+    .main-content {
+        padding-top: 50px;
+        padding-bottom: 100px;
+    }
+    .cart-area.d-n {
+        display: none;
+    }
+    .header-desktop {
+        position: relative;
+        height: 80px;
+    }
+    .header-button {
+        margin-top: 30px;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .menu-sidebar2 {
+        top: 0;
+        right: -300px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    }
+    .cart-area i {
+        font-size: 22px;
+        margin-top: 16px;
+        color: #2874f0;
+    }
+}
+
+/* Small Mobile Screens */
+@media (max-width: 767px) {
+    .au-input-xl {
+        min-width: 150px;
+    }
+    .header-button-item {
+        font-size: 22px;
+        margin-right: 15px;
+    }
+    .main-content.page-m {
+        padding: 10% 0 !important;
+    }
+    .header-mobile .navbar-mobile {
+        display: none;
+        position: absolute;
+        width: 100%;
+        top: 66px;
+        z-index: 20;
+    }
+    .header-desktop {
+        height: 80px;
+    }
+    .cart-area i {
+        font-size: 18px;
+        margin-top: 16px;
+        color: #03a9f4;
+        margin-left: 15px;
+    }
+    .footer-pagination {
+        text-align: center;
+    }
+    .product-box {
+        text-align: center;
+    }
+    .page-container {
+        position: relative;
+        top: 66px;
+        padding-left: 0;
+    }
+    .au-btn-submit {
+        min-width: 85px;
+        border-radius: 5px;
+        background: #2874f0; /* Flipkart Blue */
+        transition: background 0.3s ease;
+    }
+    .au-btn-submit:hover {
+        background: #1259c3;
+    }
+}

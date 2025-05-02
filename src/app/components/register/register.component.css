@@ -1,0 +1,64 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-container {
+    max-width: 500px;
+    width: 100%;
+    /* Increased width for more space */
+    /* margin: 80px auto; */
+    /* Increased top margin for better visibility */
+    padding: 25px;
+    /* More padding for a spacious look */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    /* Slightly rounded edges for a modern look */
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    position: fixed;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+
+}
+
+/* Input Fields */
+input {
+    width: 100%;
+    padding: 12px;
+    /* More padding for better usability */
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    /* Bigger text for better readability */
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 12px;
+    /* Increased padding for better click area */
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    /* Bigger text for better visibility */
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Error Message */
+.error {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+    text-align: center;
+}
