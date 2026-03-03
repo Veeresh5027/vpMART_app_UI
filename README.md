@@ -76,6 +76,8 @@ Ensure your vpMART Backend is running at http://localhost:8080. API endpoints ar
 ```bash
 ng serve
 ```
+---
+
 ## 👨‍💻 Author
 
 Veeresh Pattar
