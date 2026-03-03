@@ -28,3 +28,32 @@
 * **Tooling:** Angular CLI, Node.js
 
 ---
+
+## 📂 Project Architecture
+
+
+
+The project follows a highly organized structure to ensure scalability:
+
+```text
+src/app/
+├── components/           # UI Components
+│   ├── cart-details/     # Full cart view
+│   ├── cart-status/      # Header cart summary
+│   ├── checkout/         # Payment & Shipping form
+│   ├── forgot-password/  # Recovery initiation
+│   ├── login/            # User authentication
+│   ├── product-list/     # Main product grid
+│   ├── register/         # New user signup
+│   └── search/           # Global search logic
+├── dto/                  # Data Transfer Objects (Interface models)
+│   ├── product.ts        # Product data model
+│   ├── cart-item.ts      # Cart logic model
+│   ├── order.ts          # Order submission model
+│   └── ...               # (Total 12+ type-safe models)
+├── services/             # API & Logic layer (Product, Auth, Cart services)
+├── guards/               # Route protection logic
+├── app.routes.ts         # Centralized routing
+└── app.constants.ts      # Global API configurations
+```
+
