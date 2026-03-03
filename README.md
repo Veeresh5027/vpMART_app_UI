@@ -56,4 +56,23 @@ src/app/
 ├── app.routes.ts         # Centralized routing
 └── app.constants.ts      # Global API configurations
 ```
+## ⚙️ Setup & Installation
+1. Prerequisites
+Node.js (LTS version)
 
+Angular CLI (npm install -g @angular/cli)
+
+2. Installation
+```bash
+git clone [https://github.com/Veeresh5027/vpMART_app_UI.git](https://github.com/Veeresh5027/vpMART_app_UI.git)
+cd vpMART_app_UI
+npm install
+```
+3. Backend Integration
+Ensure your vpMART Backend is running at http://localhost:8080. API endpoints are managed via app.constants.ts.
+
+4. Run Development Server
+
+```bash
+ng serve
+```
