@@ -78,6 +78,6 @@ ng serve
 ```
 ---
 
-👨‍💻 Author
+## 👨‍💻 Author
 ### Veeresh Pattar
 GitHub: Veeresh5027
